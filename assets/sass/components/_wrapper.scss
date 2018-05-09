@@ -158,6 +158,7 @@
 			  }
 		  }
 		  .table-wrapper {
+
 			  margin-top: 40px;
 			  width: 80%;
 			  @include breakpoint(small) {
@@ -168,6 +169,7 @@
 			  }
 		  }
 		  .table-wrapper.full-width {
+			  padding: 5px;
 			  width: 100%;
 		  }
       }

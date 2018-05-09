@@ -2331,6 +2331,7 @@ table {
       .wrapper .inner-page-content .table-wrapper tfoot {
         text-align: right; }
     .wrapper .inner-page-content .table-wrapper.full-width {
+      padding: 5px;
       width: 100%; }
 
 /* Header */
