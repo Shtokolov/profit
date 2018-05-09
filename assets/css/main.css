@@ -2319,7 +2319,12 @@ table {
       min-width: 270px; }
     .wrapper .inner-page-content__text {
       width: 50%;
-      min-width: 345px; }
+      min-width: 345px;
+      padding: 10px; }
+      @media screen and (max-width: 736px) {
+        .wrapper .inner-page-content__text {
+          width: 100%;
+          min-width: unset; } }
       .wrapper .inner-page-content__text h1 {
         text-align: center; }
     .wrapper .inner-page-content .table-wrapper {
@@ -2783,7 +2788,6 @@ table {
   top: 0;
   visibility: hidden;
   width: 100%;
-  max-height: 100vw;
   overflow: auto; }
   #menu .inner {
     padding: 2.5em 1.5em 0.5em 1.5em ;
@@ -2867,11 +2871,11 @@ table {
         font-weight: 400; }
         #menu .sub-menu .links .title a {
           background: none; }
-    #menu .sub-menu.active {
+    #menu .sub-menu.a {
       background: #3548ff; }
-      #menu .sub-menu.active .links {
+      #menu .sub-menu.a .links {
         height: 24em; }
-        #menu .sub-menu.active .links .title {
+        #menu .sub-menu.a .links .title {
           background: #3f51ff;
           padding-top: 6px;
           padding-bottom: 6px;
@@ -2879,7 +2883,7 @@ table {
           -o-transition: all 0.3s;
           transition: all 0.3s;
           font-weight: 800; }
-          #menu .sub-menu.active .links .title a {
+          #menu .sub-menu.a .links .title a {
             color: #fff; }
 
 body.is-menu-visible header nav {

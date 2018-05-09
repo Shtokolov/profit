@@ -153,6 +153,11 @@
 		  &__text {
 			  width: 50%;
 			  min-width: 345px;
+			  padding: 10px;
+			  @include breakpoint(small) {
+				 width: 100%;
+				  min-width: unset;
+			  }
 			  h1 {
 				  text-align: center;
 			  }
