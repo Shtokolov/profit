@@ -4,7 +4,8 @@
 
 	#sidebar {
 		@include padding(2.5em, 2.5em);
-		background: _palette(bg);
+		background: #495aff;
+		box-shadow: #000 0 0 50px;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -81,18 +82,18 @@
 					border-radius: 0.2em;
 					bottom: 0;
 					content: '';
-					height: 0.2em;
+					height: 2px;
 					position: absolute;
 					right: 0;
 					width: 100%;
 				}
 
 				&:before {
-					background: lighten(_palette(bg), 5);
+					background: lighten(_palette(bg), 1);
 				}
 
 				&:after {
-					@include vendor('background-image', 'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
+					background: lighten(_palette(bg), 7);
 					@include vendor('transition', 'max-width #{_duration(transition)} ease');
 					max-width: 0;
 				}
