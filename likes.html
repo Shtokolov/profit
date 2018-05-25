@@ -93,23 +93,28 @@
                 <p>Крутые проекты начинаются с заполнения этой формы</p>
                 <div class="split style1">
                     <section>
-                        <form method="post" action="#">
+                        <form id="formaction" method="POST">
                             <div class="field half first">
                                 <label for="name">Имя</label>
-                                <input type="text" name="name" id="name"/>
+                                <input type="text" name="name" id="name" required />
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email"/>
+                                <input type="text" name="email" required id="email"/>
                             </div>
                             <div class="field">
                                 <label for="message">Сообщение</label>
-                                <textarea name="message" id="message" rows="5"></textarea>
+                                <textarea name="message" id="message" rows="5" required></textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
                             </div>
                             <ul class="actions">
-                                <li><a href="" class="button submit">Отправить</a></li>
+                                <li><button type="submit" class="button submit">Отправить</button></li>
                             </ul>
                         </form>
+                        <script>
+                            var contactform =  document.getElementById('formaction');
+                            contactform.setAttribute('action', 'https://formspree.io/' + 'ruslanosman1215' + '@' + 'yandex' + '.' + 'ru');
+                        </script>
                     </section>
                     <section>
                         <ul class="contact">
